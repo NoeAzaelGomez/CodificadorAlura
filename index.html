@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="logo de alura"><h1>Encriptador para mensajes de texto</h1>
+    </header>
+    <main>
+        <section class="section1">
+            <div>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="Botones">
+                <h6 class="informacion">&#9888; Solo letras minúsculas y sin acentos</h6>
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="section2">
+            <article>
+                <div>
+                    <textarea class="areaencriptado" cols="30" rows="10"></textarea>
+                    <img src="imagenes/Muñeco.png" alt="Encriptación">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+                </div>
+            </article>
+                <button class="btn-copiar" style="visibility: hidden;" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="pie">Challenge de encriptado/desencriptado de Noe Azael Gómez Serrano</p>
+    </footer>
+
+</body>
+
+</html>
+<script src="script.js"></script>
